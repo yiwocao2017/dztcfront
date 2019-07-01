@@ -1,0 +1,52 @@
+.city-select-module-wrap{
+	position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1024;
+    background-color: #f7f7f7;
+}
+.city-select-module-title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 1px solid #e3e3e3;
+    position: absolute;
+    z-index: 1110;
+    top: 0;
+}
+.city-select-module-back {
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABR0lEQVRYR+2WPW7CQBCF34Ast9yAI5Ao9MEdlNyQG1C6xOmDCDdxCytYtMYkxPJ6fkCisUtrNe/b2fdml/Dij16sjx6g70C0A8l3vgJo7IbpEu9ZaTLrbjNKToc1AeVxOl+21YgDbPOCQJ/e48cN00wNcRXfEOHNw3+5j8VMBYBQ4HwoCJioIf6JY+8G6Sy2gW4TWiAU4qEjfAo0EEpxGUBYJYEwiMsBOAijuA4gBgHgz+3dhtOlIBb8xnFUu6iiphfXd+AGdQcRflnFHwOoh0wFYB1Wohg2j6JhuHoX+mFV1+XnwD1Am9uDCa0TU9WBrqhJ5kTE1LIOSHJuhOABJOIt6ZAak7+Mfq9UYc6VnYgDaHbelhShMfkHiXHCNS6wwk3nmWoUJ9u8AGjU9Zhgn2n1cQC+1L+I2OrPWcCn4Dk60So9QN+BC0CuQzApVg2BAAAAAElFTkSuQmCC);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 24px;
+}
+.city-select-module-title-name {
+    text-align: center;
+    color: #3e3e3e;
+}
+.login-module-wrapper{
+    margin-top: 40px;
+}
+.login-module-top-tip{
+    position: absolute;
+    top: 48px;
+    font-size: 12px;
+    color: #bbb;
+    left: 10px;
+}
+.login-module-tip{
+    text-align: center;
+    padding: 10px;
+    color: #bbb;
+}

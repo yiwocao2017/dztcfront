@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title>添加银行卡</title>
+</head>
+
+<body class="bc ">
+	<form id="bankCardForm">
+		<input id="userId" name="userId" type="hidden" />
+		<input name="type" id="type" type="hidden" value="C">
+		<input name="currency" id="currency" type="hidden" value="CNY">
+		<input name="bankCode" id="bankCode" type="hidden">
+		<div class="wp100 plr30 fs30 lh100 ba p-r bb ">
+			<div class="inline_block wid p-a">持卡人</div>
+			<input type="text" placeholder="请输入真实姓名" id="realName" name="realName" class="fs30 pl160 wp100">
+		</div>
+		<div class=" fs30 ba  lh100 wp100 plr30 bb p-r">
+			<div class=" inline_block">银行类型</div>
+			<div class="fr pr28" id="bankNameSpan">请选择</div>
+			<img src="../images/更多@2x.png" class="more">
+			<select id="bankName" name="bankName" class="over-select"></select>
+		</div>
+
+		<div class="wp100 plr30 fs30 lh100 ba p-r bb ">
+			<div class="inline_block wid p-a">银行支行</div>
+			<input type="text" id="subbranch" name="subbranch" class="fs30 pl160 wp100">
+		</div>
+
+		<div class="wp100 plr30 fs30 lh100 ba p-r bb ">
+			<div class="inline_block wid p-a">银行卡号</div>
+			<input type="number" placeholder="请输入银行卡号" id="bankcardNumber" name="bankcardNumber" class="fs30 pl160 wp100">
+		</div>
+		<div class="wp100 plr30 fs30 lh100 ba p-r bb ">
+			<div class="inline_block wid p-a">预留手机号</div>
+			<input type="tel" placeholder="请输入手机号" id="bindMobile" name="bindMobile" class="fs30 pl160 wp100">
+		</div>
+	</form>
+
+	<div class=" plr20 mt100">
+		<input type="button" value="确定" id="sbtn" class="but wp100 fs30">
+	</div>
+
+	<link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/user/AddBankcard']);
+    </script>
+</body>
+
+</html>

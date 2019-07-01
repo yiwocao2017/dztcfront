@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="import" href="../head.html?__inline">
+      <link rel="stylesheet" href="../css/base.css">
+      <link rel="stylesheet" href="../../js/lib/j_picker/jquery-weui.min.css">
+      <link rel="stylesheet" href="../../js/lib/j_picker/weui.min.css">
+    <title>新增地址</title>
+    <style>
+        .weui-picker-modal {
+            height: 5.5rem;
+        }
+
+        .toolbar,
+        .toolbar .title {
+            font-size: .3rem;
+        }
+
+        .toolbar .toolbar-inner {
+            height: 0.8rem;
+        }
+
+        .toolbar .picker-button {
+            height: 0.8rem;
+            line-height: 0.8rem;
+        }
+
+        .toolbar .title {
+            line-height: 0.8rem;
+        }
+
+        .weui-picker-modal .picker-items {
+            font-size: 0.3rem;
+        }
+
+        .weui-picker-modal .picker-modal-inner {
+            height: 4.7rem;
+        }
+
+        label.error {
+            top: 0.3rem;
+        }
+
+        .picker-calendar-month-picker,
+        .picker-calendar-year-picker {
+            line-height: 0.8rem;
+        }
+
+        i.icon.icon-next,
+        i.icon.icon-prev {
+            width: .35rem;
+            height: .35rem;
+        }
+
+        .picker-calendar-month-picker a.icon-only,
+        .picker-calendar-year-picker a.icon-only {
+            height: 0.8rem;
+            line-height: 0.8rem;
+        }
+
+        .picker-calendar-month-picker .current-month-value,
+        .picker-calendar-month-picker .current-year-value,
+        .picker-calendar-year-picker .current-month-value,
+        .picker-calendar-year-picker .current-year-value {
+            height: 0.8rem;
+        }
+
+        .weui-picker-modal .picker-modal-inner {
+            height: 4.7rem;
+        }
+
+        .picker-calendar-week-days+.picker-calendar-months {
+            height: 4.3rem;
+        }
+
+        .picker-calendar-week-days {
+            height: .4rem;
+        }
+    </style>
+</head>
+<body class="bg_f5">
+<div class="wp100">
+    <div class="bg_fff">
+        <table class="wp100 addr-table fs30">
+            <tr class="fs30 ba lh100 wp100 plr30 bb">
+                <th class="wp30 ">姓名：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="姓名" type="text" id="accept_name"/>
+                    <span class="warning top_4 ">姓名不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">手机号：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="手机号" type="tel" id="mobile"/>
+                    <span class="warning top_4">手机号不能为空</span>
+                    <span class="warning top_4">格式错误</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">省市区：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="省市区" type="text" id="provinceCode" name="provinceCode" />
+                    <span class="warning top_4">省市区不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <!-- <tr>
+                <th class="wp30">城市：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="城市" type="text" id="cityCode"/>
+                    <span class="warning top_4">城市不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr>
+                <th class="wp30">区/县：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="区/县" type="text" id="districtCode"/>
+                    <span class="warning top_4">区/县不能为空</span>
+                    <span class="warning top_4">长度不能超过20位</span>
+                </td>
+            </tr>
+            <tr> -->
+                <th class="wp30">详细地址：</th>
+                <td class="wp70 p_r">
+                    <input placeholder="详细地址" type="text" id="street"/>
+                    <span class="warning top_4">详细地址不能为空</span>
+                    <span class="warning top_4">长度不能超过128位</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="height: 88px;"></div>
+    <footer class="fixft bg_fff b_bd_t fs30 tc lh3em">
+        <div class="wp100  but" id="sbtn">保存地址</div>
+    </footer>
+</div>
+<i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+<link rel="import" href="../footer.html?__inline">
+<script src="../../js/lib/j_picker/jquery-weui.min.js"></script>
+<script src="../../js/lib/j_picker/city-picker.min.js"></script>
+<script>
+    require(['app/controller/user/AddAddress']);
+</script>
+</body>
+</html>

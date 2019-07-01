@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title>我的帐户</title>
+</head>
+
+<body class="bc">
+	<div id="wrapper" class="scroll-wrapper">
+        <div id="scroll">
+            <div id="pullDown" class="idle">
+                <div class="pullDownLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+			<div class="hig290 black">
+				<div class="fs24 tc white pt10 pb20">帐户余额</div>
+				<div class="tc pb60">
+					<span class="fs42 white">¥</span>
+					<span class="fs60 white" id="amount"></span>
+				</div>
+				<div class="white fs28 tc pb50">
+					<div class="recharge tc inline_block mr120" id="charge">充值</div>
+					<div class="tixian tc inline_block" id="withdraw">提现</div>
+				</div>
+			</div>
+
+			<div id="integralWrap"></div>
+			<div id="pullUp" class="idle">
+                <div class="pullUpLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<link rel="import" href="../footer.html?__inline">
+	<script>
+		require(['app/controller/user/Account']);
+	</script>
+</body>
+</html>

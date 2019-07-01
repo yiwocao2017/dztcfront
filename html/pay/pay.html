@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>支付</title>
+</head>
+
+<body class="bg_f3f3f3">
+    <div class="pay-small-item b-t-ed">支付方式</div>
+    <div id="content">
+        <div id="yeCont" class="pay-item mt0 active">
+            <img src="../../images/kyye-icon.png?__inline" class="pay-item-img" />
+            <div class="pl34">余额，可用余额 <span class="blue fs13p">¥</span><span class="blue" id="CNYAmount"></span></div>
+            <div class="chose-icon circle-icon"></div>
+        </div>
+        <div id="wxCont" class="pay-item mt0">
+            <img src="../../images/wechat.png?__inline" class="pay-item-img" />
+            <div class="pl34">微信支付</div>
+            <div class="chose-icon circle-icon"></div>
+        </div>
+    </div>
+    <div class="hp50"></div>
+    <div class="fix-b2 pay-bottom">
+        合计：<span class="normal1_002269" id="unit">¥</span><span class="big_002269" id="price"></span>
+        <input type="button" id="payBtn" value="立即支付" class="small-btn-002269 fs15p">
+    </div>
+    <link rel="import" href="../footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/pay/Pay']);
+    </script>
+</body>
+
+</html>

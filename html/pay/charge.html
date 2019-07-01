@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title>充值</title>
+	<style>
+		label.error{
+		    top: 0.2rem;
+		}
+	</style>
+</head>
+
+<body class="bc">
+	<form id="chargeForm">
+		<div class="ba plr30 ptb30 bb">
+			<div class="fs30 pb20">充值金额</div>
+			<div class="fs60 p-r">
+				<div class="inline_block charge-unit">¥</div>
+				<input type="number" placeholder="请输入充值金额" id="amount" name="amount" class="fs60 pl1em wp100" />
+			</div>
+		</div>
+		<input type="hidden" id="payType" name="payType" value="5"/>
+	</form>
+	<div id="wxCont" class="pay-item mt0 active">
+		<img src="../../images/wechat.png?__inline" class="pay-item-img" />
+		<div class="pl34">微信支付</div>
+		<div class="chose-icon circle-icon"></div>
+	</div>
+	<div class=" plr20 mt100">
+		<input type="button" value="充值" id="sbtn" class="but wp100 fs30">
+	</div>
+	<link rel="import" href="../footer.html?__inline">
+	<script>
+		require(['app/controller/pay/Charge']);
+	</script>
+</body>
+
+</html>

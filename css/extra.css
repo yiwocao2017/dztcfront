@@ -1,0 +1,223 @@
+/**
+ *
+ * 下拉样式 Pull down styles
+ *
+ */
+
+.scroll-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scroll-scroll {
+    position: relative;
+}
+
+@-webkit-keyframes bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    40% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+.pullDownLabel, .pullUpLabel {
+    width: 100%;
+    clear: both;
+    height: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.pullDownLabel>div, .pullUpLabel>div {
+    width: 10px;
+    height: 10px;
+    background-color: #06cdb8;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    margin-top: 10px;
+}
+
+.pullDownLabel .bounce1, .pullUpLabel .bounce1 {
+    -webkit-animation-delay: -.3s;
+    animation-delay: -.3s;
+}
+
+.pullDownLabel .bounce2, .pullUpLabel .bounce2 {
+    -webkit-animation-delay: -.2s;
+    animation-delay: -.2s;
+}
+
+.pullDownLabel .bounce3, .pullUpLabel .bounce3 {
+    -webkit-animation-delay: -.1s;
+    animation-delay: -.1s;
+}
+
+.over-select {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+label.error {
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    right: 10px;
+    top: 0;
+    color: #f55555;
+    font-size: 0.2rem;
+}
+
+.pay-small-item {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.26rem;
+    color: #999;
+    padding-left: 0.3rem;
+    border-bottom: 1px solid #ededed;
+    background-color: #fff;
+    margin-top: 0.2rem;
+}
+
+.b-t-ed {
+    border-top: 1px solid #ededed;
+}
+
+.pay-item {
+    height: 1rem;
+    margin-top: 0.2rem;
+    background-color: #fff;
+    line-height: 1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    color: #484848;
+    font-size: 0.3rem;
+    position: relative;
+    border-bottom: 1px solid #ededed;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.pay-item .pay-item-img {
+    position: absolute;
+    top: 0.26rem;
+    width: 0.48rem;
+    height: 0.48rem;
+}
+
+.pl34 {
+    padding-left: 0.68rem;
+}
+
+.chose-icon {
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    right: 0.32rem;
+    top: 0.29rem;
+    border: 1px solid #ededed;
+}
+
+.circle-icon {
+    border-radius: 50%;
+}
+
+.pay-item.active .chose-icon {
+    background: url(../images/xzta-icon.png?__inline) no-repeat;
+    background-size: cover;
+}
+
+.fix-b2 {
+    height: 0.98rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ededed;
+    line-height: 0.98rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    background-color: #fff;
+}
+.pay-bottom {
+    color: #484848;
+    font-size: 0.3rem;
+}
+.normal1_002269 {
+    font-size: 0.3rem;
+    color: #003A63;
+}
+.big_002269 {
+    font-size: 18px;
+    color: #fff;
+    color: #003A63;
+}
+.small-btn-002269 {
+    font-size: 0.28rem;
+    background-color: #003A63;
+    width: 1.88rem;
+    height: 0.8rem;
+    border-radius: 3px;
+    float: right;
+    margin-top: 0.07rem;
+    text-align: center;
+    color: #fff;
+}
+.fs15p {
+    font-size: 0.3rem;
+}
+.fs13p {
+    font-size: 0.26rem;
+}
+
+.fix3{
+    position: fixed;
+    bottom: 0.2rem;
+    width: 100%;
+    z-index: 100;
+}
+
+.charge-unit{
+    position: absolute;
+}
+
+.pl1em{
+    padding-left: 1em;
+}
+
+.pl180{
+    padding-left: 1.8rem;
+}
+.ming1{
+    width: 1.6rem;
+}
+
+.index-avatar{
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}

@@ -1,0 +1,33 @@
+<div class="city-select-module-wrap" id="login-module-wrap">
+	<div class="city-select-module-title">
+        <div class="city-select-module-back"></div>
+        <div class="city-select-module-title-name">登录</div>
+    </div>
+    <div id="login-module-wrapper" class="login-module-wrapper">
+        <div class="login-module-top-tip">若您已经绑定过手机号，可直接使用手机号进行登录。</div>
+        <form class="register-wrap" id="loginForm">
+            <div class="wp100 bg_fff">
+                <div class="reg-item b-b-e9 reg-item-user">
+                    <div class="p_r wp100">
+                        <input type="tel" placeholder="请输入手机号码" id="mobile" name="mobile" class="reg-input"/>
+                    </div>
+                </div>
+                <div class="reg-item b-b-e9 reg-item-password">
+                    <div class="p_r wp100">
+                        <input type="password" placeholder="请输入密码" id="password" name="password" class="reg-input"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="special-button">
+            <input type="button" id="loginBtn" value="登录"/>
+            <div class="reg-b-tip">
+                <a id="loginFdPwd" class="reg-br-tip">找回密码?</a>
+            </div>
+        </div>
+        <div class="login-module-tip">
+            <div>若您还未注册，请先进行微信登录，并绑定手机号</div>
+        </div>
+        <div class="tc"><img id="weChatIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFbElEQVRoQ+1ZzVIbRxDuHgk4Bj+B4QkQVUHKLeKYioX1kzvyE1h5guAnQDyBxT0SAtmVI/LNiFR5/QRWniBwROxOp3qXxavdmZ3ZXdmucmVvlGZ6+uvfrxuE7+TD7wQHrBxI86+ftvCedhCpggAVANyMGotIOoB4Q0TTs4Prd6sy5EqAsPLClYdA2EWErWzK0RgQxt794nzccm6y3f18uhCQ3yY/1gnESwBs5lUgvEdEN4DQl+7iJA+gXECaZ5VNUdo4RoRuUQDx+wwIBfSGz2anWWRnBsJekCTOEJdjP8ujdmdp7LmLF7beyQSkM6m9BIC+nSLFTxHBXJZka/zrtWOSZg2kfVF7/SVCyaQgh5os0b4JjBWQ9qR6hIB/mB79Ur/bgDECaV/sdRHFa7OSdEsEyyGAuIUAT813zSf8MPPudnU5kwqk+XavIjy81Cc23QLgwBNyoHO932PuvTog9hBwx6xy2gkaDxuzlupEKpDOpHYJAHWN6BPPvTuyrSosozOpNgmwX8RLRPLF6OB6ENdJCyQtpHTCbKwd9KD1MSL+bHNe1Wekt9iOGzAFSO2Tim4UARFVqn1RneYGA/Rq1JgdReUpgaR442TYuOpFBfh5JPG5FHSuypMgnGBHlsXp+Jf38/Cu75nyhpMnzLiKjQ5mT4xA1LlBt5672Iq7tH1R/ZeLgUo4gyxJ8cF/kOB8eHC1xMnsK2IyCOORkfAIV5mSS58U8ZvwBp9pT6oOVyMiejc6mC0VhkCWdADwBwA6HTZmCW7WmVRvgt8zfjHDJIDorITg7f/Z+Huqeo75l+u6jqqCcQiVy+VKeJf/xtLaDiIGoHNR/0CLYePqUf8EkM6kOgDAw7jCXhm3ozGe0X7wSPkJkQRMBXl+83QF3pQlbUosVVBCHRCe28qOGlcF5AMAVhJA3LsnWXrGcoXaO0YQ294a9kzG8MPxnvo2gAjh99GzK5/EKoDUSGWRtNBKsyCTTRDwMXzQ1trtN7UeEhynnadIGbYGkqd/MNkEormqE9sAMlW1aIFZArJULhMvkTNszHZtFOAzAceSg0Qle7vnh2285wRLC+9pfCHRuajxTK/MGy2QICFLzK+UX5bw6kxqfRWZDPuOJ+RuFMxjP4rEfWgQTTsALRC+2Jmoc8SvlDzkrIldU8LyWaYgcW/48tnCABBPfAZOQHUpqBv3Vtir4tbNDSQQRI7nLvZNFUwHxDY0l6qedrD73GSTDXFSm5v4j83Exv1I1clXCSS1atmzUmoNGzM/TFTfKj2iS/jUhmg3n9PtsDHzV6GdN9VDIGCG6/AaNAQlEPtZqlx6LwqIafyMF2nSSdIYZaxa6XSKIAcE4ljFAsJreXpP/EldLyGgj6PG7JGBqOcRQ57420CLBZ1pYWDKl7SdQZSesBwNkFWuf+yqXBwUs+RSef1S5/E4iVUCSZlJTEbU/E6OVxYtm/4TNkFxT5f6zX5yttHO7Do6nxOJ30z9bXts5FXJS6dKAKqRQgvkwbXzXNObAS3nDiI5XOke4rtCxKMDbTLYUWP2qq3PU+WkathrVZsAeJbXC3nvPQDlEXhpLiKAf6R7V1GxCuPKdNUhlhcc34sTzagsI5BgbbM+Lb7uLAKBCat6wxhKNQLxq8g3BhPlVDpzWAH5lmBMnsjkkfDwQyXrq7YsxQJHdZs3/dBNI6aZckT1BK9BAYDXRtkXaxaIeWCSa6Jr20C1FMXiLT9vSuWNIwDqrgoQl1cE6tl6obBHogIeCkEPALumgUxrIIJzAjnOu20p5BEdtRAk6iCpCSn/duPQQYQ5zy9yrTTNEkKFq5ZNuOnOMAldhbJpOliX3yJAvsbd/4F8DStneeM/FDUYYFS6osQAAAAASUVORK5CYII="></div>
+    </div>
+</div>

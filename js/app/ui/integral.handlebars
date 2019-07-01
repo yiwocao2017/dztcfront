@@ -1,0 +1,13 @@
+{{#each items}}
+	<div class="ba bb wp100 plr30 hig160 clearfix p-r bg_fff">
+		<div class="inline_block center ">
+			<div>
+				<span class="fs28">{{bizNote}}</span>
+			</div>
+			<div class="fs24 co9">{{formateDateTime createDatetime}}</div>
+		</div>
+		<div class="inline_block fr price-cen blue">
+			<span class="fs32">{{formatAmount transAmount}}</span>
+		</div>
+	</div>
+{{/each}}

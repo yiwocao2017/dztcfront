@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="../head.html?__inline">
+    <title>账户管理</title>
+</head>
+
+<body class="bc ">
+    <div class="wp100 plr30 fs30 lh100 ba p-r bb ">
+		<div class="inline_block wid p-a">微信名</div>
+		<div type="text" class="fs30 pl160 co0" id="nickname"></div>
+	</div>
+
+	<div class="wp100 plr30 fs30 lh100 ba p-r bb ">
+		<div class="inline_block wid p-a">手机号</div>
+		<div type="text" class="fs30 pl160 co0" id="mobile"></div>
+	</div>
+
+	<div class=" fs30 ba  lh100 wp100 plr30 bb p-r mt20" id="mobileWrap">
+		<div class=" inline_block" id="mobileName">绑定手机号</div>
+		<img src="../images/更多@2x.png" class="more ">
+	</div>
+    <div class=" fs30 ba  lh100 wp100 plr30 bb p-r" id="tradeWrap">
+		<div class=" inline_block" id="tradeName">设置交易密码</div>
+        <img src="../images/更多@2x.png" class="more ">
+	</div>
+	<div class="fs30 ba lh100 wp100 plr30 bb p-r" id="identityWrap">
+		<div class=" inline_block">身份证绑定</div>
+		<div class="fr inline_block pr40 coc" id="identityFlag"></div>
+		<img src="../images/更多@2x.png" class="more ">
+	</div>
+	<div class=" fs30 ba  lh100 wp100 plr30 bb p-r" id="bankWrap">
+		<div class=" inline_block">绑定银行卡</div>
+        <div class="fr inline_block pr40 coc" id="bankFlag"></div>
+		<img src="../images/更多@2x.png" class="more">
+	</div>
+	<div class=" fs30 ba  lh100 wp100 plr30 bb p-r" id="address">
+		<div class=" inline_block">管理量体地址</div>
+		<div class="fr inline_block pr40 coc" id="addressFlag"></div>
+		<img src="../images/更多@2x.png" class="more">
+	</div>
+    <link rel="import" href="../footer.html?__inline">
+    <script>
+        require(['app/controller/user/User']);
+    </script>
+</body>
+
+</html>

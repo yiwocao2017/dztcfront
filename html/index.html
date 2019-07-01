@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="import" href="head.html?__inline">
+    <title>首页</title>
+</head>
+
+<body class="bc">
+    <div id="wrapper" class="scroll-wrapper">
+        <div id="scroll">
+            <div id="pullDown" class="idle">
+                <div class="pullDownLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+            <div class="wp100 ba-img plr30  p-r hig220" id="getMore">
+                <div class="mtb60 va index-avatar">
+                    <img id="avatar" src="" class="head">
+                </div>
+                <div class=" inline_block va pl30">
+                    <div class="fs28 h-name" id="nickname"></div>
+                    <div class="fs24 h-name" id="mobile"></div>
+                </div>
+                <img src="../images/更多@2x 2.png" class="more">
+            </div>
+
+            <div class="ba wp100 plr30 hig90 lh90 p-r" id="goAccount">
+                <span class="fs30">余额：</span>
+                <span class="fs24 blue">¥</span>
+                <span class="fs30 blue" id="amount"></span>
+                <img src="../images/更多@2x.png" class="more">
+            </div>
+
+            <div class="wp100 ba hig100 lh100 mt20 ">
+                <div class="wp50  fl tc bor-r" id="yjfg">
+                    <img src="../images/复购@2x.png" class="hig36 va">
+                    <span class="fs32 pl15">一键复购</span>
+                </div>
+                <div class="wp50  fl tc va" id="yylt">
+                    <img src="../images/量体@2x.png" class="hig36 va">
+                    <span class="fs32 pl15">预约量体</span>
+                </div>
+            </div>
+
+            <div class=" ba wp100 plr30 lh80 mt20 fs28 b-bottom">我的订单</div>
+
+            <div id="content"></div>
+            <div id="pullUp" class="idle">
+                <div class="pullUpLabel">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                    <div class="bounce4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="import" href="footer.html?__inline">
+    <script data-loader>
+        require(['app/controller/Index']);
+    </script>
+
+</body>
+
+</html>

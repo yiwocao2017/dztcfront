@@ -1,0 +1,64 @@
+.fbplunWrap{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1024;
+    display: none;
+}
+.fbplunWrap .fbplun-title{
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #000;
+    position: relative;
+    border-bottom: 1px solid #ededed;
+    background-color: #fff;
+    text-align: center;
+}
+.fbplunWrap .fbplun-title .cancelPl, .fbplunWrap .fbplun-title .publishPl{
+    height: 43px;
+    line-height: 44px;
+    width: 5em;
+    text-align: center;
+    font-size: 14px;
+    top: 0;
+    position: absolute;
+    background: #fff;
+}
+.fbplunWrap .fbplun-title .cancelPl{
+    color: #06cdb8;
+    left: 0;    
+}
+.fbplunWrap .fbplun-title .publishPl{
+    color: #313131;
+    right: 0;
+}
+.fbplunWrap .fbplun-cont{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.fbplunWrap .fbplun-cont .fbplun-cont-area{
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    font-size: 14px;
+    position: absolute;
+    background: transparent;
+}
+.fbplunWrap .fbplun-cont .fbplun-cont-area-tip{
+    padding-left: 10px;
+    padding-top: 6px;
+    font-size: 13px;
+    display: inline-block;
+    color: #c8c8c8;
+}
+.fbplunWrap .fbplun-cont .fbplun-cont-area-error-tip{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}

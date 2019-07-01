@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="import" href="../head.html?__inline">
+	<title>订单详情</title>
+</head>
+
+<body class="bc">
+	<div class="ba lh100 hig100 plr30 fs30 p-r mt20 bb">
+		<div class="co9 inline_block ming1 p-a">订单编号</div>
+		<div class="inline_block pl160" id="code"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r bb">
+		<div class="co9 inline_block ming1 p-a">姓名</div>
+		<div class=" inline_block pl160" id="applyName"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb">
+		<div class="co9 inline_block ming1 p-a">手机号码</div>
+		<div class=" inline_block pl160" id="applyMobile"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb hidden" id="ltRealNameWrap">
+		<div class="co9 inline_block ming1 p-a">量体师姓名</div>
+		<div class=" inline_block pl160" id="ltRealName"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb hidden" id="ltMobileWrap">
+		<div class="co9 inline_block ming1 p-a">量体师手机</div>
+		<div class=" inline_block pl160" id="ltMobile"></div>
+	</div>
+	<div class="ba lh100  plr30 fs30 p-r  bb ">
+		<div class="co9 inline_block ming1 p-a">量体地址</div>
+		<div class=" inline_block pl160 adress" id="address"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb">
+		<div class="co9 inline_block ming1 p-a">预约时间</div>
+		<div class=" inline_block pl160" id="ltDatetime"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb">
+		<div class="co9 inline_block ming1 p-a">量体叮嘱</div>
+		<div class=" inline_block pl160" id="applyNote"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb">
+		<div class="co9 inline_block ming1 p-a">下单时间</div>
+		<div class=" inline_block pl160" id="createDatetime"></div>
+	</div>
+	<div class="ba lh100 hig100 plr30 fs30 p-r  bb">
+		<div class="co9 inline_block ming1 p-a">订单状态</div>
+		<div class=" inline_block pl160 red" id="status"></div>
+	</div>
+	<div class="wp100 mb20 hidden" id="logisticsWrap">
+		<div class="ba lh100  plr30 fs30 p-r  bb ">
+			<div class="co9 inline_block ming1 p-a">物流单号</div>
+			<div class=" inline_block pl160 adress" id="logisticsCode"></div>
+		</div>
+		<div class="ba lh100  plr30 fs30 p-r  bb ">
+			<div class="co9 inline_block ming1 p-a">物流公司</div>
+			<div class=" inline_block pl160 adress" id="logisticsCompany"></div>
+		</div>
+		<div class="ba lh100  plr30 fs30 p-r  bb ">
+			<div class="co9 inline_block ming1 p-a">发货人</div>
+			<div class=" inline_block pl160 adress" id="deliverer"></div>
+		</div>
+		<div class="ba lh100  plr30 fs30 p-r  bb ">
+			<div class="co9 inline_block ming1 p-a">发货时间</div>
+			<div class=" inline_block pl160 adress" id="deliveryDatetime"></div>
+		</div>
+		<div class="ba lh100  plr30 fs30 p-r  bb ">
+			<div class="co9 inline_block ming1 p-a">收货地址</div>
+			<div class=" inline_block pl160 adress" id="reAddress"></div>
+		</div>
+	</div>
+
+	<link rel="import" href="../footer.html?__inline">
+	<script data-loader>
+		require(['app/controller/biz/Order']);
+	</script>
+</body>
+
+</html>
